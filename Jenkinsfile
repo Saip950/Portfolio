@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Cloning project from GitHub...'
-                git branch: 'main', url: 'https://github.com/Patiladitya45/protfolio.git'
+                git branch: 'main', url: 'https://github.com/Saip950/Portfolio.git'
             }
         }
         
@@ -43,7 +43,7 @@ pipeline {
     
     post {
         success {
-            echo 'Pipeline finished successfully! Visit:http://127.0.0.1:3000/index.html'
+            echo 'Pipeline finished successfully! Visit:http://127.0.0.1:5500/protfolio-main/index.html'
         }
         failure {
             echo 'Pipeline failed! Check build logs.'
